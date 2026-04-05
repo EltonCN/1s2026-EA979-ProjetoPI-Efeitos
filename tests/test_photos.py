@@ -11,6 +11,13 @@ def test_photos():
 
     paths = get_all_imgs_in_dir(photo_dir)
 
+    print("----------------")
+    print(package_dir)
+    print("----------------")
+    print(photo_dir)
+    print("----------------")
+    print(paths)
+    print("----------------")
     assert len(paths) >= 15
 
     ra = os.path.basename(paths[0]).split("_")[0]
